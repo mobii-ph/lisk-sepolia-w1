@@ -37,26 +37,23 @@ export const HeaderMenuLinks = () => {
   const pathname = usePathname();
 
   return (
-    <>
-      {menuLinks.map(({ label, href, icon }) => {
-        const isActive = pathname === href;
-        return (
-          <li key={href}>
-            <Link
-              href={href}
-              passHref
-              className={cn(
-                "relative flex items-center justify-between px-4 py-2 text-sm transition-colors duration-200",
-                isActive ? "bg-base-100 primary-content" : "text-slate-400",
-              )}
-            >
-              {icon}
-              {label}
-            </Link>
-          </li>
-        );
-      })}
-    </>
+    // Find the navigation section and add the Events link:
+    <div className="navbar-center hidden lg:flex">
+      <ul className="menu menu-horizontal px-1">
+        <li>
+          <Link href="/">Home</Link>
+        </li>
+        <li>
+          <Link href="/events">Events</Link>
+        </li>
+        <li>
+          <Link href="/debug">Debug Contracts</Link>
+        </li>
+        <li>
+          <Link href="/blockexplorer">Block Explorer</Link>
+        </li>
+      </ul>
+    </div>
   );
 };
 
