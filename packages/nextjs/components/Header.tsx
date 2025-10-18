@@ -12,7 +12,6 @@ import {
   SuperchainFaucetButton,
 } from "~~/components/scaffold-eth";
 import { useOutsideClick } from "~~/hooks/scaffold-eth";
-import { cn } from "~~/utils/cn";
 
 type HeaderMenuLink = {
   label: string;
