@@ -2,7 +2,6 @@
 
 import React, { useCallback, useRef, useState } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { Logo } from "./Logo";
 import { Bars3Icon, BugAntIcon, HomeIcon } from "@heroicons/react/24/outline";
 import {
