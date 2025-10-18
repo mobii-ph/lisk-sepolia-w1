@@ -33,8 +33,6 @@ export const menuLinks: HeaderMenuLink[] = [
 ];
 
 export const HeaderMenuLinks = () => {
-  const pathname = usePathname();
-
   return (
     // Find the navigation section and add the Events link:
     <div className="navbar-center hidden lg:flex">
